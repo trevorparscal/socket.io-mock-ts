@@ -46,7 +46,7 @@ export default defineConfig(() => ({
     lib: {
       entry: join(PACKAGE_ROOT, 'src/index.ts'),
       formats: ['es', 'umd'],
-      name: 'socket.io-mock',
+      name: 'socket.io-mock-ts',
       fileName: (format) => `index.${format}.js`,
     },
   },

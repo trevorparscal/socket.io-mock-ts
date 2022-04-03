@@ -1,5 +1,5 @@
 {
-  "name": "socket.io-mock",
+  "name": "socket.io-mock-ts",
   "version": "1.0.1",
   "description": "Mocked version of Socket.IO for testing",
   "files": [

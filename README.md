@@ -1,4 +1,4 @@
-# Socket.IO-Mock (TypeScript)
+# Socket.IO-Mock-TS (TypeScript)
 
 A mock to test the Socket.IO library implementation.
 
@@ -19,7 +19,7 @@ yarn add socket.io-mock-ts
 Create a new socket mock with:
 
 ```ts
-import { SocketServerMock } from 'socket.io-mock';
+import { SocketServerMock } from 'socket.io-mock-ts';
 
 const socket = new SocketServerMock();
 
@@ -31,7 +31,7 @@ And use the socket as if it was a normal Socket.IO socket.
 For example:
 
 ```ts
-import { SocketServerMock } from 'socket.io-mock';
+import { SocketServerMock } from 'socket.io-mock-ts';
 import { expect, test } from 'vitest';
 
 test('Sockets should be able to talk to each other without a server', () => {
@@ -48,7 +48,7 @@ test('Sockets should be able to talk to each other without a server', () => {
 Or with using promises in unit tests, for example:
 
 ```ts
-import { SocketServerMock } from 'socket.io-mock';
+import { SocketServerMock } from 'socket.io-mock-ts';
 import { expect, test } from 'vitest';
 
 test('Sockets should be able to talk to each other without a server', () => {
