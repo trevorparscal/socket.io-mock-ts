@@ -1,12 +1,12 @@
 # Socket.IO-Mock-TS (TypeScript)
 
+[![npm version](https://badge.fury.io/js/socket.io-mock-ts.svg)](http://badge.fury.io/js/socket.io-mock-ts)
+
 A mock to test the Socket.IO library implementation.
 
 - Written with Typescript.
 - Bundled with [vite](https://github.com/vitejs/vite).
 - Tested with [vitest](https://github.com/vitest-dev/vitest).
-
-> NEW! Added support for disconnect() and close()
 
 # Installation
 
