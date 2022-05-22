@@ -17,6 +17,10 @@ export class SocketServerMock extends Emitter {
    */
   clientMock: SocketClientMock;
 
+  handshake: {
+    [key: string]: any;
+  };
+
   /**
    * List of rooms.
    */
@@ -54,9 +58,10 @@ export class SocketServerMock extends Emitter {
   /**
    * Creates a new SocketMock instance.
    **/
-  constructor() {
+  constructor(handshake?: { [key: string]: any }) {
     super();
 
+    this.handshake = handshake ?? {};
     this.clientMock = new SocketClientMock(this);
     this.rooms = [];
 
