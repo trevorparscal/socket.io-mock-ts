@@ -8,6 +8,9 @@ export declare class SocketServerMock extends Emitter {
      * Mocked Socket.IO client.
      */
     clientMock: SocketClientMock;
+    handshake: {
+        [key: string]: any;
+    };
     /**
      * List of rooms.
      */
@@ -41,7 +44,9 @@ export declare class SocketServerMock extends Emitter {
     /**
      * Creates a new SocketMock instance.
      **/
-    constructor();
+    constructor(handshake?: {
+        [key: string]: any;
+    });
     /**
      * Emit an event to the server (used by client).
      *

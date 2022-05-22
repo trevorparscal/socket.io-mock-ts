@@ -118,9 +118,10 @@ const createArgs = (args) => {
   return args ? JSON.parse(JSON.stringify(args)) : void 0;
 };
 class SocketServerMock extends Emitter {
-  constructor() {
+  constructor(handshake) {
     super();
     __publicField(this, "clientMock");
+    __publicField(this, "handshake");
     __publicField(this, "rooms");
     __publicField(this, "_emitFn");
     __publicField(this, "generalCallbacks");
@@ -160,6 +161,7 @@ class SocketServerMock extends Emitter {
         }
       };
     });
+    this.handshake = handshake != null ? handshake : {};
     this.clientMock = new SocketClientMock(this);
     this.rooms = [];
     this._emitFn = Emitter.prototype.emit;
