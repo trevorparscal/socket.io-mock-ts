@@ -145,6 +145,8 @@ export class SocketServerMock extends Emitter {
   disconnect = (): SocketServerMock => {
     this.emit('disconnecting', 'Socket.IO mock server disconnect');
     this.emit('disconnect', 'Socket.IO mock server disconnect');
+    this._emitFn('disconnecting', 'Socket.IO mock server disconnect');
+    this._emitFn('disconnect', 'Socket.IO mock server disconnect');
     return this;
   };
 
