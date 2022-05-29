@@ -82,6 +82,7 @@ export class SocketClientMock extends Emitter {
     this.disconnected = true;
     this.connected = false;
     this.emit('disconnect', 'io client disconnect');
+    this._emitFn('disconnect', 'io client disconnect');
     return this;
   };
 
