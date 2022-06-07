@@ -147,10 +147,10 @@ class SocketServerMock extends Emitter {
       return value;
     });
     __publicField(this, "disconnect", () => {
-      this.emit("disconnecting", "Socket.IO mock server disconnect");
-      this.emit("disconnect", "Socket.IO mock server disconnect");
-      this._emitFn("disconnecting", "Socket.IO mock server disconnect");
-      this._emitFn("disconnect", "Socket.IO mock server disconnect");
+      this.emit("disconnecting", "io server disconnect");
+      this.emit("disconnect", "io server disconnect");
+      this._emitFn("disconnecting", "io server disconnect");
+      this._emitFn("disconnect", "io server disconnect");
       return this;
     });
     __publicField(this, "to", (room) => {
